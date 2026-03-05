@@ -15,11 +15,11 @@ Rather than utilizing a naive Brute-Force approach (O(N * M)) or the standard C+
 * **Space Complexity:** O(1) — The skip table is fixed at 256 indices (for all ASCII characters), resulting in constant extra memory allocation regardless of the input size.
 
 ## Search Results (Birthday Index)
-* **Target Sequence:** [INSERT YOUR SEQUENCE HERE, e.g., 1206]
+* **Target Sequence:** [INSERT YOUR SEQUENCE HERE, e.g., 11012004]
 * **Index of Occurrence:** [INSERT INDEX RESULT HERE]
 * **Execution Time:** [INSERT MS TIME HERE] ms
 *(Note: A dataset of 1,000,000 Pi digits was utilized for testing).*
 
 ## Scope for Improvements
-1. **Chunked Memory Loading:** Currently, the entire `pi.txt` file is loaded into heap memory. For billion-digit numbers, the algorithm should stream the file in chunks to prevent RAM exhaustion.
+1. **Chunked Memory Loading:** Currently, the entire `pi-billion.txt` file is loaded into heap memory. For billion-digit numbers, the algorithm should stream the file in chunks to prevent RAM exhaustion.
 2. **Multithreaded Searching:** Implementing `std::thread` to segment the text and run the search concurrently across multiple CPU cores would significantly decrease search times on massive datasets.
